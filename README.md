@@ -1,7 +1,7 @@
 meandmymonkey/satis
 ===================
 
-A docker base image for [Satis](https://github.com/composer/satis).
+A Docker base image for [Satis](https://github.com/composer/satis).
 
 For a complete Satis image, you will need to build a container image
 inheriting from this one. Besides adding ```/etc/satis.json```,

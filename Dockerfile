@@ -17,6 +17,7 @@ RUN \
     rm /var/www/index.php && \
     echo "no data available" > /var/www/index.html
 
+ENV PATH /opt/bin:$PATH
 ADD ./default /etc/nginx/sites-available/default
 
 CMD ["nginx"]
