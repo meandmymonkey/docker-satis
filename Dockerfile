@@ -14,8 +14,8 @@ RUN \
     echo "exec /usr/bin/php /opt/satis/bin/satis build /etc/satis.json /var/www" \
     >> /opt/bin/satis-build && \
     chmod 777 /opt/bin/satis-build && \
-    rm /var/www/index.php && \
-    echo "no data available" > /var/www/index.html
+    rm /var/www/web/index.php && \
+    echo "no data available" > /var/www/web/index.html
 
 ENV PATH /opt/bin:$PATH
 ADD ./default /etc/nginx/sites-available/default
